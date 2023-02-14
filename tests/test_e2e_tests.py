@@ -58,6 +58,7 @@ def clean_caches_module():
         (15),
     ],
 )
+@pytest.mark.nigthly
 def test_example(clean_caches_module, get_cache_servers, times):
 
     for i in range(1, times + 1):
